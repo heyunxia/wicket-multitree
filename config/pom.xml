@@ -32,8 +32,9 @@
     </prerequisites>
 
 	<properties>
-        <isis.version>1.6.0</isis.version>
-        <isis-viewer-wicket.version>1.6.0</isis-viewer-wicket.version>
+        <isis.version>1.7.0-SNAPSHOT</isis.version>
+        <isis-viewer-wicket.version>1.7.0-SNAPSHOT</isis-viewer-wicket.version>
+		<isis-module-devutils.version>1.7.0-SNAPSHOT</isis-module-devutils.version>        
 
         <!-- must be consistent with the versions defined by the JDO Objectstore -->
         <datanucleus-accessplatform-jdo-rdbms.version>3.3.6</datanucleus-accessplatform-jdo-rdbms.version>
@@ -312,6 +313,11 @@
 				<scope>import</scope>
 			</dependency>
 
+	        <dependency>
+	        	<groupId>org.apache.isis.module</groupId>
+	        	<artifactId>isis-module-devutils-impl</artifactId>
+	        	<version>${isis-module-devutils.version}</version>
+	        </dependency>
 
             <!-- this project's own modules -->
             <dependency>

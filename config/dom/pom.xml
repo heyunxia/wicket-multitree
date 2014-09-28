@@ -133,7 +133,6 @@
         <dependency>
         	<groupId>org.apache.isis.viewer</groupId>
         	<artifactId>isis-viewer-wicket-ui</artifactId>
-        	<version>1.7.0-SNAPSHOT</version>
         </dependency>
 	</dependencies>
 </project>
