@@ -19,10 +19,14 @@
 
 package org.isis.wicket.multitree.applib;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+import org.apache.isis.core.metamodel.spec.feature.Contributed;
+import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
 import org.apache.isis.viewer.wicket.model.models.EntityCollectionModel;
 import org.apache.isis.viewer.wicket.model.models.EntityModel;
 import org.apache.wicket.extensions.markup.html.repeater.tree.ITreeProvider;
@@ -55,12 +59,29 @@ public class CollectionContentsDataProvider implements ITreeProvider<ObjectAdapt
 	@Override
 	public boolean hasChildren(ObjectAdapter node) {
         //return foo.getParent() == null || !foo.getFoos().isEmpty();
-		// TODO Auto-generated method stub
+		ObjectSpecification objectSpecification = node.getSpecification();
+        final List<ObjectAssociation> associations = objectSpecification.getAssociations(Contributed.EXCLUDED);
+        for (final ObjectAssociation association : associations) {
+        	if (association.isOneToManyAssociation()){
+        		//return true;
+        	}
+            	
+        }
 		return false;
 	}
 	
 	@Override
 	public Iterator<ObjectAdapter> getChildren(ObjectAdapter node) {
+		ObjectSpecification objectSpecification = node.getSpecification();
+        final List<ObjectAssociation> associations = objectSpecification.getAssociations(Contributed.EXCLUDED);
+        for (final ObjectAssociation association : associations) {
+        	if (association.isOneToManyAssociation()){
+                List<ObjectAdapter> adapters = new ArrayList<ObjectAdapter>();
+                ObjectAdapter e = association.get(node);
+                adapters.add(e);
+                return adapters.iterator();
+        	}
+        }
         List<ObjectAdapter> adapters = model.getObject();
         return adapters.iterator();
 	}

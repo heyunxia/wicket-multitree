@@ -37,9 +37,11 @@ public class SimpleObjectsFixture extends FixtureScript {
         execute(new SimpleObjectsTearDownFixture(), executionContext);
 
         // create
-        create("Foo", executionContext);
-        create("Bar", executionContext);
-        create("Baz", executionContext);
+        SimpleObject o1 = create("Foo", executionContext);
+        SimpleObject o2 = create("Bar", executionContext);
+        SimpleObject o3 = create("Baz", executionContext);
+        o1.getFriends().add(o2);
+        o1.getFriends().add(o3);
     }
 
     // //////////////////////////////////////

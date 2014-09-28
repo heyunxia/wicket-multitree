@@ -18,8 +18,12 @@
  */
 package dom.simple;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.VersionStrategy;
+
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.Bookmarkable;
 import org.apache.isis.applib.annotation.MemberOrder;
@@ -55,6 +59,16 @@ public class SimpleObject implements Comparable<SimpleObject> {
     }
 
     //endregion
+    
+    private List<SimpleObject> friends = new ArrayList<SimpleObject>();
+    
+    public List<SimpleObject> getFriends() {
+		return friends;
+	}
+    public void setFriends(final List<SimpleObject> friends) {
+		this.friends = friends;
+	}
+    
 
 
     //region > compareTo

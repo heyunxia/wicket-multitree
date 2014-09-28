@@ -10,11 +10,13 @@ import org.apache.isis.viewer.wicket.model.models.EntityCollectionModel;
 import org.apache.isis.viewer.wicket.ui.components.actionprompt.ActionPromptModalWindow;
 import org.apache.isis.viewer.wicket.ui.panels.PanelAbstract;
 import org.apache.wicket.Component;
+import org.apache.wicket.behavior.Behavior;
 import org.apache.wicket.extensions.markup.html.repeater.tree.AbstractTree;
-import org.apache.wicket.extensions.markup.html.repeater.tree.NestedTree;
+import org.apache.wicket.extensions.markup.html.repeater.tree.DefaultNestedTree;
+import org.apache.wicket.extensions.markup.html.repeater.tree.theme.WindowsTheme;
 import org.apache.wicket.model.IModel;
 import org.isis.wicket.multitree.applib.content.Content;
-import org.isis.wicket.multitree.applib.content.SelectableFolderContent;
+import org.isis.wicket.multitree.applib.content.EntityContent;
 
 import com.google.inject.Inject;
 
@@ -31,10 +33,13 @@ public class CollectionContentsAsMultitreePanel extends PanelAbstract<EntityColl
     //private static final String ID_ENTITY_ACTIONS = "entityActions";
     private static final String ID_ACTION_PROMPT_MODAL_WINDOW = "actionPromptModalWindow";
     
-    private AbstractTree<ObjectAdapter> tree;
-    CollectionContentsDataProvider provider;
+    // Wicket stuff
+    private Behavior theme;    
     private Content content;
-    
+    CollectionContentsDataProvider provider;
+
+    // The collection being presented 
+    private AbstractTree<ObjectAdapter> tree;
     
     public CollectionContentsAsMultitreePanel(final String id, final EntityCollectionModel model) {
         super(id, model);
@@ -53,18 +58,25 @@ public class CollectionContentsAsMultitreePanel extends PanelAbstract<EntityColl
 
     private void buildGui() {
         final EntityCollectionModel model = getModel();
+        provider = new CollectionContentsDataProvider(model);
         
-        provider = new CollectionContentsDataProvider(model);        
-        content = new SelectableFolderContent(provider);
+        //content = new SelectableFolderContent(provider);
+        content = new EntityContent();
         
-        tree = new 	NestedTree<ObjectAdapter>(ID_TABLE, provider) {
+        theme = new WindowsTheme();
+        
+        tree = new 	DefaultNestedTree<ObjectAdapter>(ID_TABLE, provider) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			protected Component newContentComponent(String id,
-					IModel<ObjectAdapter> model) {
-	               return CollectionContentsAsMultitreePanel.this.newContentComponent(id, model);			}
+			protected Component newContentComponent(String id, IModel<ObjectAdapter> model) {
+				return CollectionContentsAsMultitreePanel.this.newContentComponent(id, model);			
+			}
 		};
+		
+		tree.add(theme);
+		
+		//tree.add(new Drag)
 		
         addActionPromptModalWindow();
         
