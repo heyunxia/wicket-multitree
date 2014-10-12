@@ -69,7 +69,7 @@ public class SimpleObjectsFixture extends FixtureScript {
 	private SimpleObjects simpleObjects;
 
 	private String getXml() {
-		File file = new File("src/main/resources/config-Tag[structured].xml");
+		File file = new File("../dom/src/main/resources/config-Tag[structured].xml");
 		String everything = "";
 		try {
 			BufferedReader br = null;
@@ -85,7 +85,9 @@ public class SimpleObjectsFixture extends FixtureScript {
 				}
 				everything = sb.toString();
 			} finally {
-				br.close();
+				if (br != null){
+					br.close();
+				}
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

@@ -1,13 +1,15 @@
 /**
  * 
  */
-package org.isis.wicket.multitree.applib;
+package org.isis.wicket.multitree.applib.model;
 
 import java.io.Serializable;
 
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.model.Model;
-import org.iter.codac.pss.configuration.Structure;
+
+import dom.simple.tree.Node;
+import dom.simple.tree.RecordNode;
 
 /**
  * @author kevin
@@ -22,28 +24,22 @@ import org.iter.codac.pss.configuration.Structure;
  * @see #equals(Object)
  * @see #hashCode()
  */
-public class ConfigModel extends LoadableDetachableModel<Structure>
+public class RecordNodeModel extends LoadableDetachableModel<Node>
 {
     private static final long serialVersionUID = 1L;
 
     private final String name;
-    private Structure structure;
+    private RecordNode value;
 
-    public ConfigModel(Structure structure, String name) {
-        super(structure);
-        this.structure = structure;
-        
+    public RecordNodeModel(RecordNode value, String name) {
+        super(value);
+        this.value = value;
     	this.name = name;
     }
 
     @Override
-    protected Structure load(){
-    	for (Structure structure : this.structure.getStructure()) {
-			if (structure.getName().equals(name)){
-				return structure;
-			}
-		}
-        return structure;//config.getStructure().get(0);//Foo(id);
+    protected RecordNode load(){
+        return value;
     }
 
     /**
@@ -51,8 +47,8 @@ public class ConfigModel extends LoadableDetachableModel<Structure>
      */
     @Override
     public boolean equals(Object obj){
-        if (obj instanceof ConfigModel){
-            return ((ConfigModel)obj).toString().equals(name);
+        if (obj instanceof RecordNode){
+            return ((RecordNode)obj).toString().equals(name);
         }
         return false;
     }
@@ -67,6 +63,6 @@ public class ConfigModel extends LoadableDetachableModel<Structure>
     
     @Override
     public String toString() {
-    	return structure.toString();
+    	return value.toString();
     }
 }

@@ -14,10 +14,12 @@ import org.apache.wicket.extensions.markup.html.repeater.tree.AbstractTree;
 import org.apache.wicket.extensions.markup.html.repeater.tree.DefaultNestedTree;
 import org.apache.wicket.extensions.markup.html.repeater.tree.theme.WindowsTheme;
 import org.apache.wicket.model.IModel;
-import org.isis.wicket.multitree.applib.content.StructureContent;
-import org.iter.codac.pss.configuration.Structure;
+import org.isis.wicket.multitree.applib.content.ConfigContent;
+import org.isis.wicket.multitree.applib.content.SelectableConfigContent;
 
 import com.google.inject.Inject;
+
+import dom.simple.tree.Node;
 
 
 /**
@@ -34,11 +36,11 @@ public class ClobAsMultitreePanel extends PanelAbstract<ScalarModel> {
     
     // Wicket stuff
     private Behavior theme;    
-    private StructureContent content;
+    private SelectableConfigContent content;
     private ClobPlantSystemConfigurationDataProvider provider;
 
     // The collection being presented 
-    private AbstractTree<Structure> tree;
+    private AbstractTree<Node> tree;
     
     public ClobAsMultitreePanel(final String id, final ScalarModel model) {
         super(id, model);
@@ -59,15 +61,15 @@ public class ClobAsMultitreePanel extends PanelAbstract<ScalarModel> {
         final ScalarModel model = getModel();
         provider = new ClobPlantSystemConfigurationDataProvider(model);
         
-        content = new StructureContent(provider.getConfig());
+        content = new SelectableConfigContent(provider, provider.getConfig());
         
         theme = new WindowsTheme();
         
-        tree = new 	DefaultNestedTree<Structure>(ID_TABLE, provider) {
+        tree = new 	DefaultNestedTree<Node>(ID_TABLE, provider) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			protected Component newContentComponent(String id, IModel<Structure> model) {
+			protected Component newContentComponent(String id, IModel<Node> model) {
 				return ClobAsMultitreePanel.this.newContentComponent(id, model);			
 			}
 		};
@@ -81,7 +83,7 @@ public class ClobAsMultitreePanel extends PanelAbstract<ScalarModel> {
         addOrReplace(tree);
     }
     
-    protected Component newContentComponent(String id, IModel<Structure> model)
+    protected Component newContentComponent(String id, IModel<Node> model)
     {
         return content.newContentComponent(id, tree, model);
     }   

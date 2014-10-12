@@ -36,22 +36,28 @@ import org.apache.isis.viewer.wicket.model.models.ScalarModel;
 import org.apache.wicket.extensions.ajax.markup.html.repeater.data.table.AjaxFallbackDefaultDataTable;
 import org.apache.wicket.extensions.markup.html.repeater.tree.ITreeProvider;
 import org.apache.wicket.model.IModel;
-import org.iter.codac.pss.configuration.PlantSystemConfigurationObject;
-import org.iter.codac.pss.configuration.Structure;
+import org.isis.wicket.multitree.applib.model.ConfigModel;
+import org.isis.wicket.multitree.applib.model.RecordNodeModel;
+import org.isis.wicket.multitree.applib.model.StructureModel;
+
+import dom.simple.tree.Configuration;
+import dom.simple.tree.Node;
+import dom.simple.tree.RecordNode;
+import dom.simple.tree.StructureNode;
 
 /**
  * Part of the {@link AjaxFallbackDefaultDataTable} API.
  */
-public class ClobPlantSystemConfigurationDataProvider implements ITreeProvider<Structure> {
+public class ClobPlantSystemConfigurationDataProvider implements ITreeProvider<Node> {
 	private static final long serialVersionUID = 1L;
 	private final ScalarModel model;
-	private PlantSystemConfigurationObject config;
+	private Configuration config;
 
 	public ClobPlantSystemConfigurationDataProvider(final ScalarModel model) {
 		this.model = model;
 		ObjectAdapter ob1 = model.getObject();
 		if (ob1 == null){
-			config = new PlantSystemConfigurationObject();
+			config = new Configuration();
 			return;
 		}
 		Object o = ob1.getObject();
@@ -69,14 +75,13 @@ public class ClobPlantSystemConfigurationDataProvider implements ITreeProvider<S
 		}
 	}
 
-	private PlantSystemConfigurationObject getConfigFrom(CharSequence chars) {
+	private Configuration getConfigFrom(CharSequence chars) {
 		System.out.println("Reading XML");
 		try {
-			JAXBContext jc = JAXBContext.newInstance(PlantSystemConfigurationObject.class);
+			JAXBContext jc = JAXBContext.newInstance(Configuration.class);
 			Unmarshaller unmarshaller = jc.createUnmarshaller();
 			InputStream source = getStream(chars);
-			return (PlantSystemConfigurationObject) unmarshaller
-					.unmarshal(source);
+			return (Configuration) unmarshaller.unmarshal(source);
 		} catch (JAXBException e) {
 			e.printStackTrace();
 			return null;
@@ -95,36 +100,71 @@ public class ClobPlantSystemConfigurationDataProvider implements ITreeProvider<S
 		};
 	}
 
+	public Configuration getConfig() {
+		return config;
+	}
+
+	
 	@Override
 	public void detach() {
 		model.detach();
 	}
 
 	@Override
-	public Iterator<Structure> getRoots() {
-		List<Structure> list = new ArrayList<Structure>();
-		for (Structure structure : config.getStructure()) {
-			list.add(structure);
+	public Iterator<? extends Node> getRoots() {
+		/*
+		if (config==null){
+			return null;
 		}
+		List<Node> list = new ArrayList<Node>();
+		list.add(config);
+		//TODO: Add Constraints, later
 		return list.iterator();
+		*/
+		return config.getChildren();
+	}
+
+
+	@Override
+	public Iterator<? extends Node> getChildren(Node node) {
+		if (node instanceof Configuration){
+			Configuration conf = (Configuration)node;
+			return conf.getChildren();
+		}
+		if (node instanceof StructureNode){
+			StructureNode cNode = (StructureNode)node;
+			return cNode.getChildren();
+		}
+		return null;
 	}
 
 	@Override
-	public boolean hasChildren(Structure node) {
-		return node.getStructure().size() > 0;
+	public boolean hasChildren(Node node) {
+		if (node instanceof Configuration){
+			Configuration conf = (Configuration)node;
+			return conf.hasChildren();
+		}
+		if (node instanceof StructureNode){
+			StructureNode cNode = (StructureNode)node;
+			return cNode.hasChildren();
+		}
+		return false;
 	}
 
 	@Override
-	public Iterator<Structure> getChildren(Structure node) {
-		return node.getStructure().iterator();
-	}
-
-	@Override
-	public IModel<Structure> model(final Structure structure) {
-		return new ConfigModel(structure, structure.getName());
-	}
-
-	public PlantSystemConfigurationObject getConfig() {
-		return config;
+	public IModel<Node> model(Node object) {
+		if (object instanceof Configuration){
+			Configuration conf = (Configuration)object;
+			return new ConfigModel(conf, conf.getName());
+		}
+		if (object instanceof StructureNode){
+			StructureNode cNode = (StructureNode)object;
+			return new StructureModel(cNode, cNode.getName());
+		}
+		if (object instanceof RecordNode){
+			RecordNode cNode = (RecordNode)object;
+			return new RecordNodeModel(cNode, cNode.getName());
+		}
+		return null;
 	}
 }

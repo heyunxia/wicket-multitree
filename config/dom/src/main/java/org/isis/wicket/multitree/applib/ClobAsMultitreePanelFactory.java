@@ -31,9 +31,12 @@ public class ClobAsMultitreePanelFactory extends ComponentFactoryAbstract {
             return ApplicationAdvice.DOES_NOT_APPLY;
         }
         final ScalarModel scalarModel = (ScalarModel) model;
-        //ObjectSpecification configSpec = getSpecificationLoader().loadSpecification(PlantSystemConfigurationObject.class);
         ObjectSpecification configSpec = getSpecificationLoader().loadSpecification(org.apache.isis.applib.value.Clob.class);
         ObjectSpecification typeOfSpec = scalarModel.getTypeOfSpecification();
+        if (model.getObject() == null){
+        	System.out.println("Model is null");
+        	return appliesIf(false);
+        }
         return appliesIf(typeOfSpec.isOfType(configSpec));
 	}
 
