@@ -19,40 +19,80 @@
 
 package fixture.simple;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.apache.isis.applib.fixturescripts.FixtureScript;
+import org.apache.isis.applib.value.Clob;
+
 import dom.simple.SimpleObject;
 import dom.simple.SimpleObjects;
 
-import org.apache.isis.applib.fixturescripts.FixtureScript;
-
 public class SimpleObjectsFixture extends FixtureScript {
 
-    public SimpleObjectsFixture() {
-        withDiscoverability(Discoverability.DISCOVERABLE);
-    }
+	public SimpleObjectsFixture() {
+		withDiscoverability(Discoverability.DISCOVERABLE);
+	}
 
-    @Override
-    protected void execute(ExecutionContext executionContext) {
+	@Override
+	protected void execute(ExecutionContext executionContext) {
 
-        // prereqs
-        execute(new SimpleObjectsTearDownFixture(), executionContext);
+		// prereqs
+		execute(new SimpleObjectsTearDownFixture(), executionContext);
 
-        // create
-        SimpleObject o1 = create("Foo", executionContext);
-        SimpleObject o2 = create("Bar", executionContext);
-        SimpleObject o3 = create("Baz", executionContext);
-        o1.getFriends().add(o2);
-        o1.getFriends().add(o3);
-    }
+		// create
+		SimpleObject o1 = create("Foo", executionContext);
+		SimpleObject o2 = create("Bar", executionContext);
+		SimpleObject o3 = create("Baz", executionContext);
 
-    // //////////////////////////////////////
+		String chars = getXml();
+		Clob xml = new Clob("XML", "application/xml", chars);
+		o1.setXml(xml);
 
-    private SimpleObject create(final String name, ExecutionContext executionContext) {
-        return executionContext.add(this, simpleObjects.create(name));
-    }
+		o1.getFriends().add(o2);
+		o1.getFriends().add(o3);
+	}
 
-    // //////////////////////////////////////
+	// //////////////////////////////////////
 
-    @javax.inject.Inject
-    private SimpleObjects simpleObjects;
+	private SimpleObject create(final String name,
+			ExecutionContext executionContext) {
+		return executionContext.add(this, simpleObjects.create(name));
+	}
+
+	// //////////////////////////////////////
+
+	@javax.inject.Inject
+	private SimpleObjects simpleObjects;
+
+	private String getXml() {
+		File file = new File("src/main/resources/config-Tag[structured].xml");
+		String everything = "";
+		try {
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new FileReader(file));
+				StringBuilder sb = new StringBuilder();
+				String line = br.readLine();
+
+				while (line != null) {
+					sb.append(line);
+					sb.append(System.lineSeparator());
+					line = br.readLine();
+				}
+				everything = sb.toString();
+			} finally {
+				br.close();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return everything;
+	}
 
 }

@@ -30,6 +30,7 @@ import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Title;
 import org.apache.isis.applib.util.ObjectContracts;
+import org.apache.isis.applib.value.Clob;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
 @javax.jdo.annotations.DatastoreIdentity(
@@ -89,5 +90,23 @@ public class SimpleObject implements Comparable<SimpleObject> {
     private DomainObjectContainer container;
 
     //endregion
+    
+    // {{ Xml (property)
+	private Clob xml;
 
+	@MemberOrder(sequence = "1")
+	@javax.jdo.annotations.Column(allowsNull="true")
+	@javax.jdo.annotations.Persistent(defaultFetchGroup="false", columns = {
+		      @javax.jdo.annotations.Column(name = "attachment_name"),
+		      @javax.jdo.annotations.Column(name = "attachment_mimetype"),
+		      @javax.jdo.annotations.Column(name = "attachment_chars", sqlType = "CLOB")
+		  })
+	public Clob getXml() {
+		return xml;
+	}
+
+	public void setXml(final Clob xml) {
+		this.xml = xml;
+	}
+	// }}
 }

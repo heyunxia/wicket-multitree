@@ -1,0 +1,210 @@
+/*
+ *  Licensed to the Apache Software Foundation (ASF) under one
+ *  or more contributor license agreements.  See the NOTICE file
+ *  distributed with this work for additional information
+ *  regarding copyright ownership.  The ASF licenses this file
+ *  to you under the Apache License, Version 2.0 (the
+ *  "License"); you may not use this file except in compliance
+ *  with the License.  You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ */
+
+.collectionContentsAsMultitreePanel tree.contents {
+	font-size: 0.9em;
+	width: 100%;
+	border-collapse:collapse;
+	margin-top:10px;
+}
+
+.collectionContentsAsMultitreePanel tree.contents caption { text-align: left; }
+.collectionContentsAsMultitreePanel tree.contents tr { 
+	}
+
+.collectionContentsAsMultitreePanel tree.contents tr.even { background-color: #FFFFFF; }
+.collectionContentsAsMultitreePanel tree.contents tr.odd { background-color: #F0EFEA; }
+
+.collectionContentsAsMultitreePanel tree.contents tr:hover td {
+	background-color:#D2F0F3;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.reloaded-after-concurrency-exception {
+    background-color: yellow;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.reloaded-after-concurrency-exception:hover td {
+    background-color: orange;
+}
+
+
+.collectionContentsAsMultitreePanel tree.contents tr td { 
+	padding-left: 8px; 
+	padding-right: 10px; 
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.collectionContentsAsMultitreePanel tree.contents tr th,
+.collectionContentsAsMultitreePanel tree.contents tr th a span { 
+	color: #FFFFFF;
+	background-color: #46423C;
+	text-align: left; 
+	white-space: nowrap; 
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderUp a span ,
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderDown a span {
+    background-color: #20B5C2;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderUp a:hover,
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderDown a:hover {
+    color: #46423C;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderDown {
+	background-color: #20B5C2; 
+	background-image: url("../org.apache.isis.viewer.wicket.ui.components.collectioncontents.ajaxtable.CollectionContentsAsMultitreePanel/images/arrow_down.png"); 
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderUp {
+	background-color: #20B5C2; 
+	background-image: url("../org.apache.isis.viewer.wicket.ui.components.collectioncontents.ajaxtable.CollectionContentsAsMultitreePanel/images/arrow_up.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.collectionContentsAsMultitreePanel tree.contents tr th.wicket_orderNone {
+	background-image: url("../org.apache.isis.viewer.wicket.ui.components.collectioncontents.ajaxtable.CollectionContentsAsMultitreePanel/images/arrow_off.png");
+	background-position: right;
+    background-repeat: no-repeat;
+}
+.collectionContentsAsMultitreePanel tree.contents tr th a {
+	font-weight: normal;
+}
+.collectionContentsAsMultitreePanel tree.contents #message {
+	padding-left: 3px;
+}
+.collectionContentsAsMultitreePanel tree.contents caption { 
+	padding-bottom: 2px;
+}
+
+.collectionContentsAsMultitreePanel tree.contents input:disabled {
+	background-color: transparent;
+	border: none;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tbody td,
+.collectionContentsAsMultitreePanel tree.contents thead th {
+	padding:5px;
+	text-transform:uppercase;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.navigation div.navigatorLabel {
+	display: inline;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.navigation div.navigatorLabel > div {
+	display: inline;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.navigation div.navigator {
+	display: inline;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tr.navigation div.navigator > div {
+	display: inline;
+	float: right;
+}
+
+.collectionContentsAsMultitreePanel tree.contents img {
+    width: 16px;
+    height: 16px;
+}
+
+.collectionContentsAsMultitreePanel tree.contents tbody td:first-child {
+    min-width: 20px;
+}
+
+.collectionContentsAsMultitreePanel tree.contents .navigator  a.first,
+.collectionContentsAsMultitreePanel tree.contents .navigator  a.prev,
+.collectionContentsAsMultitreePanel tree.contents .navigator  a.next, 
+.collectionContentsAsMultitreePanel tree.contents .navigator  a.last,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .goto a,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .goto em,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .first em,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .prev em,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .next em,
+.collectionContentsAsMultitreePanel tree.contents .navigator  .last em {
+	margin-left: 5px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background-color:#F0EFEA;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	float:left;
+	text-align:center;
+}
+
+.collectionContentsAsMultitreePanel tree.contents .navigator .goto em {
+	background-color: #20B5C2;
+	color:#FFFFFF;
+}
+
+.collectionContentsAsMultitreePanel tree.contents a {
+	color:#46423C;
+}
+
+.collectionContentsAsMultitreePanel tree.contents a:hover {
+	text-decoration:underline;
+	color:#20B5C2;
+}
+
+.collectionContentsAsMultitreePanel tree.contents .entityLinkSelect2Panel .entityImage {
+	padding-right:6px;
+}
+
+.collectionContentsAsMultitreePanel table tfoot {	
+	margin-top:20px;
+}
+
+.collectionContentsAsMultitreePanel table tfoot tr td {
+	padding:20px 4px 0px;
+	background-color:#FFFFFF !important;
+}
+
+.collectionContentsAsMultitreePanel .actions {
+	margin-top: -1px;
+    margin-bottom: -10px;
+    float: left;
+    padding:0em 0em;
+}
+
+.collectionContentsAsMultitreePanel .entityActions .cssMenuPanel .menuh a:hover
+    {
+    color: #000;
+    background-color:#E3E3D9;
+}
+
+/* bootstrap seems to set to 'pointer' */
+.collectionContentsAsMultitreePanel label:hover {
+	cursor: default;
+}
+
+.collectionContentsAsMultitreePanel td div {
+    display: table-cell;
+}
+
+.collectionContentsAsMultitreePanel div input[type=text][disabled] {
+    padding: 0px;
+}

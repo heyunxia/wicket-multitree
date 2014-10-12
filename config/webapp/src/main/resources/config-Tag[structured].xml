@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:configurationEditorSampleConfiguration xmlns:ns2="http://www.iter.org/CODAC/PlantSystemConfig/2014">
+    <ns2:title>Magnetics Signals Configuration</ns2:title>
+    <ns2:structure name="D1-NG">
+        <ns2:structure name="GA00">
+            <ns2:structure name="CM">
+                <ns2:structure name="C1">
+                    <ns2:structure name="CF">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFBL00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets image black level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1427</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFBL00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets image black level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1426</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFBS00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets bits per sample value</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1439</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFBS00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets bits per sample value</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1438</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFEX00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets exposure time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1429</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFEX00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets exposure time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1428</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFHG00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets image height</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1431</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFHG00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets image height</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1430</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFSP00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets samples per pixel value</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1441</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFSP00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets samples per pixel value</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1440</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFWD00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets image width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1433</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1CFWD00-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Sets image width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1432</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="HF">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1HFCL00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets status of Camera Link clock signal</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1425</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="MO">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1MOCU00-RSSP0</ns2:recordName>
+                                <ns2:recordDescription>Gets camera current</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1424</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1MOTE00-RSSP0</ns2:recordName>
+                                <ns2:recordDescription>Gets camera temperature</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1422</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1MOVO00-RSSP0</ns2:recordName>
+                                <ns2:recordDescription>Gets camera voltage</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1423</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="ST">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1STBL00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets status of black level configuration</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1443</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1STFR00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets status of frame rate configuration</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1444</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:CMC1STRO00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets status of ROI configuration</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1446</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+            </ns2:structure>
+            <ns2:structure name="DQ">
+                <ns2:structure name="FG">
+                    <ns2:structure name="CL">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGCLCDC1-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1260</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGCLCDC1-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the camera</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1259</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="DT">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGDTRAC1-RMMR0</ns2:recordName>
+                                <ns2:recordDescription>Raw image data</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1258</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="MO">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGMOLFC1-RMS00</ns2:recordName>
+                                <ns2:recordDescription>Gets lost frames numbet</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1255</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="TI">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCA-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">125</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCA-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">124</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCB-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">129</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCB-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">128</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCC-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">133</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCC-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">132</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCD-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">137</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCD-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">136</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCE-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">141</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCE-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">140</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCF-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">145</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCF-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">144</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCG-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">149</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCG-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">148</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCH-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">153</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCH-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">152</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCI-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">157</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCI-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">156</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCJ-WFN0E</ns2:recordName>
+                                <ns2:recordDescription>Sets timestamping edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">161</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTICOCJ-WFS0D</ns2:recordName>
+                                <ns2:recordDescription>Set timestamping decimation</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">160</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCA-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">166</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCA-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">163</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCA-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">165</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCA-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">164</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCB-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">171</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCB-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">168</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCB-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">170</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCB-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">169</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCC-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">176</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCC-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">173</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCC-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">175</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCC-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">174</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCD-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">181</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCD-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">178</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCD-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">180</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCD-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">179</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCE-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">186</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCE-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">183</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCE-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">185</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCE-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">184</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCF-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">191</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCF-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">188</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCF-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">190</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCF-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">189</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCG-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">196</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCG-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">193</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCG-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">195</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCG-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">194</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCH-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1101</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCH-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">198</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCH-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1100</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCH-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">199</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCI-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1106</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCI-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1103</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCI-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1105</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCI-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1104</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCJ-RMN0E</ns2:recordName>
+                                <ns2:recordDescription>Edge part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1111</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCJ-RMS0I</ns2:recordName>
+                                <ns2:recordDescription>ID part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1108</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCJ-RMS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1110</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTILTCJ-RMS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of the timestamp</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1109</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTIRTC1-WPS0S</ns2:recordName>
+                                <ns2:recordDescription>Sets current reference time seconds part</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">117</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTISYC1-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets reference time synchronization mode</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">121</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTITEC1-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets current reference time trigger edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">119</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="TR">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCA-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1207</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCA-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1138</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCB-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1212</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCB-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1143</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCC-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1217</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCC-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1148</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCD-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1222</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCD-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1153</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCE-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1227</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCE-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1158</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCF-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1232</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCF-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1163</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCG-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1237</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCG-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1168</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCH-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1242</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCH-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1173</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCI-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1247</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCI-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1178</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCJ-WPS00</ns2:recordName>
+                                <ns2:recordDescription>Pulse width</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1252</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRFMCJ-WTB0R</ns2:recordName>
+                                <ns2:recordDescription>Remove single FTE</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1183</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCA-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1185</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCB-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1186</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCC-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1187</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCD-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1188</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCE-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1189</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCF-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1190</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCG-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1191</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCH-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1192</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCI-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1193</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSLCJ-WCN00</ns2:recordName>
+                                <ns2:recordDescription>Sets terminal line level</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1194</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRSYC1-WFN00</ns2:recordName>
+                                <ns2:recordDescription>Sets current acquisition triggering mode</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1114</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRTEC1-WFN00</ns2:recordName>
+                                <ns2:recordDescription>Sets acquisition trigger edge</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1112</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTRTLC1-WFS00</ns2:recordName>
+                                <ns2:recordDescription>Sets acquisition trigger line</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1113</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="TS">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTSISC1-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Gets current image source</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1257</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:DQFGTSISC1-WPN00</ns2:recordName>
+                                <ns2:recordDescription>Sets image source type</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1256</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+            </ns2:structure>
+            <ns2:structure name="IF">
+                <ns2:structure name="DN">
+                    <ns2:structure name="CO">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:IFDNCOENC1-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Enables/disables data streaming to DAN</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1447</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+                <ns2:structure name="SN">
+                    <ns2:structure name="CO">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:IFSNCOENC1-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Enables/disables data streaming to SDN</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1448</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+                <ns2:structure name="TN">
+                    <ns2:structure name="ST">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:IFTNSTSL00-RSBE0</ns2:recordName>
+                                <ns2:recordDescription>Gets flag 'Synchronization lost'</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1450</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+            </ns2:structure>
+            <ns2:structure name="SC">
+                <ns2:structure name="SI">
+                    <ns2:structure name="CS">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SCSICS0000-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Returns status of camera cables connection</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">111</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+            </ns2:structure>
+            <ns2:structure name="SM">
+                <ns2:structure name="FC">
+                    <ns2:structure name="CF">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFADD1-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets application directory 1</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1264</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFADD2-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets application directory 2</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1265</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFCU00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets total number of CPUs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1261</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFMF00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of file descriptors</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1262</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFMM00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets total amount of available memory</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1263</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFSP00-WFS00</ns2:recordName>
+                                <ns2:recordDescription>Sets channel access server port</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1267</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCCFTO00-WFS00</ns2:recordName>
+                                <ns2:recordDescription>Sets channel access timeout</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1266</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="HL">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCHLIO00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Gets IOC health information</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1268</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCHLSM00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Gets IOC health summary</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1269</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="MO">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOBT00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Gets beacon time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1284</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOCC00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets client connections count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1270</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOCU00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets CPU utilization [%]</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1282</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMODC00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets database connected link count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1271</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMODD00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets database disconnected link count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1272</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOFU00-RSSR0</ns2:recordName>
+                                <ns2:recordDescription>Gets allocated file descriptors</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1273</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOHB00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets heart beat counter</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1283</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOLD00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets IOC CPU Load</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1275</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOMU00-RSSI0</ns2:recordName>
+                                <ns2:recordDescription>Gets relative memory utilization [%]</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1277</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOMU00-RSSR0</ns2:recordName>
+                                <ns2:recordDescription>Gets allocated memory</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1276</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOPD00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets process ID</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1278</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOPV00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets connected process variable count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1279</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMORC00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets record count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1280</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOSP00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Stop IOC</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1287</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOST00-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets suspended task count</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1281</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOSU00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Gets start-up time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1285</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFCMOUT00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Gets uptime</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1286</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+                <ns2:structure name="FG">
+                    <ns2:structure name="CL">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGCLCM00-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1301</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGCLCM00-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the frame grabber</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1300</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGCLEN00-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Enables/Disables device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1297</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGCLPO00-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Sets power state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1298</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGCLRS00-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Resets device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1299</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="MC">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCDV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets driver version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1293</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCFV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device firmware version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1289</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCHV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device hardware version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1290</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCML00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device model</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1291</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCSL00-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets device slot number</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1288</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGMCSN00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets serial number</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1292</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="ST">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGSTCS00-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Gets current state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1295</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGSTER00-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1296</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMFGSTPS00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets power state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1294</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+                <ns2:structure name="TM">
+                    <ns2:structure name="CL">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCA-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1383</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCA-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1382</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCB-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1385</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCB-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1384</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCC-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1387</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCC-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1386</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCD-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1389</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCD-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1388</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCE-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1391</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCE-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1390</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCF-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1393</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCF-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1392</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCG-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1395</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCG-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1394</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCH-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1397</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCH-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1396</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCI-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1399</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCI-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1398</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCJ-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1401</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLCMCJ-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the channel</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1400</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLDC00-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Reads result of last command execution</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1380</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLDC00-WAN00</ns2:recordName>
+                                <ns2:recordDescription>Sends command to the module</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1379</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLPO00-WCB00</ns2:recordName>
+                                <ns2:recordDescription>Sets power state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1381</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMCLRS00-00000</ns2:recordName>
+                                <ns2:recordDescription>Initiate device reset</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1378</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="MC">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCDV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets driver version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1307</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCFV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device firmware version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1303</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCHV00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device hardware version</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1304</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCML00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets device model</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1305</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCSL00-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets device slot number</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1302</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMMCSN00-RFT00</ns2:recordName>
+                                <ns2:recordDescription>Gets serial number</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1306</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                    <ns2:structure name="ST">
+                        <ns2:configurableRecordCollection>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTER00-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1313</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCA-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1368</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCB-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1369</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCC-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1370</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCD-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1371</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCE-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1372</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCF-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1373</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCG-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1374</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCH-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1375</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCI-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1376</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTERCJ-RSNE0</ns2:recordName>
+                                <ns2:recordDescription>Gets last error code</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1377</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCA-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1318</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCB-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1319</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCC-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1320</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCD-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1321</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCE-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1322</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCF-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1323</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCG-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1324</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCH-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1325</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCI-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1326</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTMFCJ-RFS00</ns2:recordName>
+                                <ns2:recordDescription>Gets maximum number of FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1327</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCA-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1328</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCB-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1329</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCC-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1330</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCD-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1331</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCE-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1332</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCF-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1333</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCG-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1334</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCH-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1335</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCI-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1336</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPFCJ-RSS00</ns2:recordName>
+                                <ns2:recordDescription>Gets number of pending FTEs</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1337</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTPS00-RSB00</ns2:recordName>
+                                <ns2:recordDescription>Gets power state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1311</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTSD00-RSN00</ns2:recordName>
+                                <ns2:recordDescription>Gets current state of the device</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1312</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTTM00-RSS0N</ns2:recordName>
+                                <ns2:recordDescription>Nanoseconds part of board time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1316</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTTM00-RSS0S</ns2:recordName>
+                                <ns2:recordDescription>Seconds part of board time</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1315</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                            <ns2:configurableRecord>
+                                <ns2:recordName>D1-NG-GA00:SMTMSTTM00-RST00</ns2:recordName>
+                                <ns2:recordDescription>Board time represented string</ns2:recordDescription>
+                                <ns2:recordFieldCollection>
+                                    <ns2:recordField name="VAL">1317</ns2:recordField>
+                                </ns2:recordFieldCollection>
+                            </ns2:configurableRecord>
+                        </ns2:configurableRecordCollection>
+                    </ns2:structure>
+                </ns2:structure>
+            </ns2:structure>
+        </ns2:structure>
+    </ns2:structure>
+    <ns2:structure name="Default">
+        <ns2:configurableRecordCollection>
+            <ns2:configurableRecord>
+                <ns2:recordName>D1:VAR001</ns2:recordName>
+                <ns2:recordDescription>New Variable: As plain as possible</ns2:recordDescription>
+                <ns2:recordFieldCollection>
+                    <ns2:recordField name="VAL">110</ns2:recordField>
+                </ns2:recordFieldCollection>
+            </ns2:configurableRecord>
+        </ns2:configurableRecordCollection>
+    </ns2:structure>
+    <ns2:configurableRecordCollection/>
+    <ns2:configurableConstraintCollection>
+        <ns2:configurableConstraint>
+            <constraintName>1</constraintName>
+            <constraintDescription>2</constraintDescription>
+            <constraint type="jscript"><![CDATA[@D1:VAR001 < 20]]></constraint>
+        </ns2:configurableConstraint>
+    </ns2:configurableConstraintCollection>
+</ns2:configurationEditorSampleConfiguration>
