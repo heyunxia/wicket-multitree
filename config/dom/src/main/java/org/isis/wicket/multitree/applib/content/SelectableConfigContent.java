@@ -66,7 +66,6 @@ public class SelectableConfigContent implements IDetachable {
 	}
 
 	public Component newContentComponent(String id, final AbstractTree<Node> tree, IModel<Node> model) {
-		System.out.println("SelectableConfigContent: newContentComponent");
 
 		return new Folder<Node>(id, tree, model) {
 			private static final long serialVersionUID = 1L;
