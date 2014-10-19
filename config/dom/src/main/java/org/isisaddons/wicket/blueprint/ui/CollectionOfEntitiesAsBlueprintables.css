@@ -1,0 +1,21 @@
+.collectionOfEntitiesAsBlueprintLocatables>div {
+	height: 400px;
+}
+	
+.collectionOfEntitiesAsBlueprintLocatables {
+	margin-top: 10px;
+}
+
+a span.ViewLinkItem.blueprint {
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+
+span.ViewLinkItem.blueprint {
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+
+.collectionOfEntitiesAsBlueprintLocatables .collection-contents-as-blueprint-locatables-invisible {
+    display:none;
+}

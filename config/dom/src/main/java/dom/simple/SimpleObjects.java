@@ -18,10 +18,18 @@
  */
 package dom.simple;
 
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+
+import javax.imageio.ImageIO;
+
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
+import org.isisaddons.wicket.blueprint.applib.Blueprint;
+import org.isisaddons.wicket.blueprint.applib.BlueprintLocation;
 
 @DomainService(menuOrder = "10", repositoryFor = SimpleObject.class)
 public class SimpleObjects {
@@ -62,6 +70,32 @@ public class SimpleObjects {
         container.persistIfNotAlready(obj);
         return obj;
     }
+
+	public SimpleObject create(final @Named("Name") String name, final @Named("Location") BlueprintLocation location) {
+        final SimpleObject obj = container.newTransientInstance(SimpleObject.class);
+        obj.setName(name);
+        obj.setLocation(location);
+        container.persistIfNotAlready(obj);
+        return obj;
+	}
+
+    
+	public Blueprint createPlan(final @Named("Name") String name) {
+	    final Blueprint obj = container.newTransientInstance(Blueprint.class);
+	    obj.setImageFilename(name);
+	    
+	    try {
+			Image image = ImageIO.read(new File("../dom/src/main/resources/images/"+name+".png"));
+			obj.setXSize(image.getWidth(null));
+			obj.setYSize(image.getHeight(null));
+			image.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    
+	    container.persistIfNotAlready(obj);
+	    return obj;
+	}
 
     //endregion
 

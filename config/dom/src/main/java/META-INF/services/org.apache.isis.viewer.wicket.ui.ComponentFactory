@@ -1,1 +1,2 @@
 org.isis.wicket.multitree.applib.ClobAsMultitreePanelFactory
+org.isisaddons.wicket.blueprint.ui.CollectionOfBlueprintsAsBlueprintablesFactory

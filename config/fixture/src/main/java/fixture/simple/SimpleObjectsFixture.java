@@ -26,7 +26,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import org.apache.isis.applib.fixturescripts.FixtureScript;
-import org.apache.isis.applib.value.Clob;
+import org.isisaddons.wicket.blueprint.applib.Blueprint;
+import org.isisaddons.wicket.blueprint.applib.BlueprintLocation;
 
 import dom.simple.SimpleObject;
 import dom.simple.SimpleObjects;
@@ -44,14 +45,24 @@ public class SimpleObjectsFixture extends FixtureScript {
 		execute(new SimpleObjectsTearDownFixture(), executionContext);
 
 		// create
-		SimpleObject o1 = create("Foo", executionContext);
-		SimpleObject o2 = create("Bar", executionContext);
-		SimpleObject o3 = create("Baz", executionContext);
+		SimpleObject o1 = create("Foo", new BlueprintLocation(632, 280), executionContext);
+		SimpleObject o2 = create("Bar", new BlueprintLocation(512, 302), executionContext);
+		SimpleObject o3 = create("Baz", new BlueprintLocation(118, 130), executionContext);
 
+		/*
 		String chars = getXml();
 		Clob xml = new Clob("XML", "application/xml", chars);
 		o1.setXml(xml);
-
+		*/
+		
+		Blueprint plan = createPlan("floorplan", executionContext);
+		
+		plan.addToContents(o1);
+		
+		plan.addToContents(o2);
+		
+		plan.addToContents(o3);
+		
 		o1.getFriends().add(o2);
 		o1.getFriends().add(o3);
 	}
@@ -59,9 +70,15 @@ public class SimpleObjectsFixture extends FixtureScript {
 	// //////////////////////////////////////
 
 	private SimpleObject create(final String name,
-			ExecutionContext executionContext) {
-		return executionContext.add(this, simpleObjects.create(name));
+			BlueprintLocation blueprintLocation, ExecutionContext executionContext) {
+		return executionContext.add(this, simpleObjects.create(name, blueprintLocation));
 	}
+	
+	private Blueprint createPlan(final String name,
+			ExecutionContext executionContext) {
+		return executionContext.add(this, simpleObjects.createPlan(name));
+	}
+	
 
 	// //////////////////////////////////////
 

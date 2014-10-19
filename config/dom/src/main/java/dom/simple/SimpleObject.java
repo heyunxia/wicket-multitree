@@ -31,6 +31,9 @@ import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Title;
 import org.apache.isis.applib.util.ObjectContracts;
 import org.apache.isis.applib.value.Clob;
+import org.isisaddons.wicket.blueprint.applib.Blueprint;
+import org.isisaddons.wicket.blueprint.applib.BlueprintLocation;
+import org.isisaddons.wicket.blueprint.applib.Blueprintable;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
 @javax.jdo.annotations.DatastoreIdentity(
@@ -41,7 +44,7 @@ import org.apache.isis.applib.value.Clob;
         column="version")
 @ObjectType("SIMPLE")
 @Bookmarkable
-public class SimpleObject implements Comparable<SimpleObject> {
+public class SimpleObject implements Comparable<SimpleObject>, Blueprintable {
 
     //region > name (property)
     // //////////////////////////////////////
@@ -109,4 +112,29 @@ public class SimpleObject implements Comparable<SimpleObject> {
 		this.xml = xml;
 	}
 	// }}
+
+	
+	private Blueprint plan;
+	@javax.jdo.annotations.Column(allowsNull="true")	
+	@Override
+	public Blueprint getBlueprint() {
+		return plan;
+	}
+
+	@Override
+	public void setBlueprint(Blueprint blueprint) {
+		plan = blueprint;
+	}
+
+	
+	private BlueprintLocation blueprintLocation;
+	@javax.jdo.annotations.Column(allowsNull="true")
+	@javax.jdo.annotations.Persistent
+	public BlueprintLocation getLocation() {
+		return blueprintLocation;
+	}
+	public void setLocation(BlueprintLocation location) {
+		this.blueprintLocation = location;
+	}
+	
 }
